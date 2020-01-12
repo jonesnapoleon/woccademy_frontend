@@ -1,38 +1,47 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700&display=swap');
+
+body, html{
+  margin: 0 auto;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 80%;
+  background-color: white;
+  color: black;
+  text-align: justify;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav, li, button {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#ademy {
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.social {
+  border-radius: 50%;
+  margin-right: .6rem;
 }
 
-.App-link {
-  color: #61dafb;
+#logo:hover a{
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 767px) {
+  html, body{
+    font-size: 90%;
   }
 }

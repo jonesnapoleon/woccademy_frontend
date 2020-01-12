@@ -1,0 +1,105 @@
+.jumbotron {
+    border-radius: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 37%, rgba(16,12,93,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#benefits, #partners > div, #quotes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+#quotes{
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+}
+
+#benefits > div {
+    padding: 2rem;
+    max-width: 340px;
+}
+#benefits .logo {
+    font-size: 300%;
+}
+#partners > div > div > a> img {
+    max-width: 250px;
+}
+
+#quotes .prev-next {
+    flex: 1;
+    text-align: center;
+}
+
+#quotes .prev-next.prev {
+    padding-left: 1rem;
+}
+#quotes .prev-next.next {
+    padding-right: 1rem;
+}
+
+#quotes .prev-next-content > .quote {
+    flex: 7;
+    text-align: right !important;
+}
+
+
+#quotes .prev-next-content > .face {
+    flex: 3;
+}
+#quotes .prev-next-content > .face img {
+    width: 100%;
+    max-width: 240px;
+    padding: 1rem;
+    height: auto;
+    border-radius: 50%;
+}
+#quotes .prev-next-content {
+    flex: 8;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+
+.jumbotron .jumbotron-text {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 10%;
+    width: 50%;
+    text-align: right;
+    color: white;
+}
+
+.jumbotron h3 {
+    font-weight: bolder;
+}
+.btn.btn-warning{
+    color: white;
+    border-radius: 25px;
+    background: #ff7400;
+    border-color: #ff7400;
+}
+
+@media only screen and (max-width: 767px) {
+    .jumbotron .jumbotron-text {
+        padding-right: 0;
+        width: 80%;
+        text-align: right;
+        color: white;
+    }
+    #quotes .prev-next-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #benefits > div {
+        padding: 2rem;
+        max-width: 90%;
+    }
+}
+
